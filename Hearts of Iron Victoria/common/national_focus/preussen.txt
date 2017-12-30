@@ -1,0 +1,466 @@
+focus_tree = {
+	id = preussen_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = PRE
+		}
+	}
+
+
+    	focus = {
+		id = PRE_deutschland_politik
+		icon = GFX_goal_generic_military_sphere_shine
+		#text = extra_tech_slot
+		#prerequisite = { focus = ITA_industrial_effort_2 }
+		x = 5
+		y = 0
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+        	focus = {
+		id = PRE_klein_deutschland
+		icon = GFX_goal_generic_military_sphere_shine
+		#text = extra_tech_slot
+		prerequisite = { focus = PRE_deutschland_politik }
+		x = 3
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+            	focus = {
+		id = PRE_deutsch_danischer_krieg
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		#text = extra_tech_slot
+		prerequisite = { focus = PRE_klein_deutschland }
+        will_lead_to_war_with = DEN
+		x = 1
+		y = 2
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+  			PRE = {
+			declare_war_on = {
+				target = DEN
+				type = take_state_focus
+				}
+			}
+			AUS = {
+			declare_war_on = {
+				target = DEN
+				type = take_state_focus
+				}
+			}
+			SAX = {
+			declare_war_on = {
+				target = DEN
+				type = take_state_focus
+				}
+			}
+			BAU = {
+			declare_war_on = {
+				target = DEN
+				type = take_state_focus
+				}
+			}
+			LUK = {
+			declare_war_on = {
+				target = DEN
+				type = take_state_focus
+				}
+			}
+			LIP = {
+			declare_war_on = {
+				target = DEN
+				type = take_state_focus
+				}
+			}
+
+			OLD = {
+			declare_war_on = {
+				target = DEN
+				type = take_state_focus
+				}
+			}
+			BRE = {
+			declare_war_on = {
+				target = DEN
+				type = take_state_focus
+				}
+			}
+			HAM = {
+			declare_war_on = {
+				target = DEN
+				type = take_state_focus
+				}
+			}
+			HAN = {
+			declare_war_on = {
+				target = DEN
+				type = take_state_focus
+				}
+			}
+
+			MKL = {
+			declare_war_on = {
+				target = DEN
+				type = take_state_focus
+				}
+			}
+		}
+	}
+
+        	focus = {
+		id = PRE_ultimatum_öster_holstein
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		#text = extra_tech_slot
+		prerequisite = { focus = PRE_deutsch_danischer_krieg }
+		x = 1
+		y = 3
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		dismantle_faction = Deutscher_Bund
+		}
+	}
+
+
+
+        	focus = {
+		id = PRE_befreundung_nord
+		icon = GFX_goal_generic_major_alliance
+		#text = extra_tech_slot
+		prerequisite = { focus = PRE_klein_deutschland }
+		x = 3
+		y = 2
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+
+        	focus = {
+		id = PRE_gründung_nord
+		icon = GFX_goal_generic_national_unity
+		#text = extra_tech_slot
+		available = {
+			HAN = {
+			is_subject = no
+				}
+			}
+		prerequisite = { focus = PRE_befreundung_nord }
+        prerequisite = { focus = PRE_ultimatum_öster_holstein }
+		x = 3
+		y = 3
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		country_event = { id = preussen.6 days = 1 }
+		}
+	}
+
+
+        	focus = {
+		id = PRE_offensiv_frankreich
+		icon = GFX_goal_generic_military_sphere_shine
+		#text = extra_tech_slot
+		prerequisite = { focus = PRE_gründung_nord }
+		mutually_exclusive = { focus = PRE_emser_depesche }
+		will_lead_to_war_with = FRA
+
+		x = 3
+		y = 4
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			PRE = {
+			declare_war_on = {
+				target = FRA
+				type = take_state_focus
+			}
+		}
+		}
+	}
+
+        	focus = {
+		id = PRE_emser_depesche
+		icon = GFX_goal_generic_forceful_treaty
+		#text = extra_tech_slot
+		prerequisite = { focus = PRE_gründung_nord }
+		mutually_exclusive = { focus = PRE_offensiv_frankreich }
+		will_lead_to_war_with = FRA
+
+		x = 6
+		y = 4
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+						FRA = {
+			declare_war_on = {
+				target = PRE
+				type = take_state_focus
+			}
+		}
+		}
+	}
+
+	        	focus = {
+		id = PRE_gründung_deutsch_klein
+		icon = GFX_goal_anschluss
+		#text = extra_tech_slot
+		prerequisite = { focus = PRE_emser_depesche }
+
+		x = 6
+		y = 5
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		country_event = { id = preussen.7 days = 1 }
+		}
+
+	}
+
+	        	focus = {
+		id = PRE_luxemburg_krise
+		icon = GFX_goal_generic_military_sphere_shine
+		#text = extra_tech_slot
+		prerequisite = { focus = PRE_gründung_deutsch_klein }
+
+		x = 5
+		y = 6
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+		        	focus = {
+		id = PRE_helgoland_frage
+		icon = GFX_goal_generic_military_sphere_shine
+		#text = extra_tech_slot
+		prerequisite = { focus = PRE_gründung_deutsch_klein }
+
+		x = 10
+		y = 6
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		        	focus = {
+		id = PRE_kriegsdrohung
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		#text = extra_tech_slot
+		prerequisite = { focus = PRE_luxemburg_krise }
+        mutually_exclusive = { focus = PRE_einigung }
+
+		x = 5
+		y = 7
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		country_event = { days = 1 id = preussen.19 }
+		}
+	}
+
+		        	focus = {
+		id = PRE_einigung
+		icon = GFX_goal_generic_improve_relations
+		#text = extra_tech_slot
+		prerequisite = { focus = PRE_luxemburg_krise }
+		mutually_exclusive = { focus = PRE_kriegsdrohung }
+
+		x = 7
+		y = 7
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		country_event = { days = 1 id = france.1 }
+		}
+	}
+
+		        	focus = {
+		id = PRE_sansibar
+		icon = GFX_goal_generic_improve_relations
+		#text = extra_tech_slot
+		prerequisite = { focus = PRE_helgoland_frage }
+		mutually_exclusive = { focus = PRE_ultimatum_gb }
+		available = {
+			is_puppet = no
+			758 = { is_owned_by = PRE }
+		}
+
+		x = 9
+		y = 7
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		ENG = {
+		country_event = { id = preussen.11 days = 1 }
+			}
+		}
+	}
+
+		        	focus = {
+		id = PRE_ultimatum_gb
+		icon = GFX_focus_AST_never_gallipoli_shine
+		#text = extra_tech_slot
+		prerequisite = { focus = PRE_helgoland_frage }
+		mutually_exclusive = { focus = PRE_sansibar }
+
+
+		x = 11
+		y = 7
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+
+    	focus = {
+		id = PRE_kolonial_politik
+		icon = GFX_goal_generic_military_sphere_shine
+		#text = extra_tech_slot
+		#prerequisite = { focus = ITA_industrial_effort_2 }
+		x = 20
+		y = 0
+		cost = 1
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+    	focus = {
+		id = PRE_deutsch_ostafrika
+		icon = GFX_goal_generic_military_sphere_shine
+		#text = extra_tech_slot
+		prerequisite = { focus = PRE_kolonial_politik }
+		x = 19
+		y = 1
+		cost = 1
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		country_event = { id = preussen.10 days = 1 }
+		}
+	}
+
+    	focus = {
+		id = PRE_deutsch_sud_westafrika
+		icon = GFX_goal_generic_military_sphere_shine
+		#text = extra_tech_slot
+		prerequisite = { focus = PRE_kolonial_politik }
+		x = 21
+		y = 1
+		cost = 1
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		country_event = { id = preussen.14 days = 1 }
+		}
+	}
+
+
+
+
+    }

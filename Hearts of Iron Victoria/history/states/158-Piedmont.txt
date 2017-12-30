@@ -1,0 +1,47 @@
+
+state={
+	id=158
+	name="STATE_158"
+	manpower = 4765476
+	
+	state_category = metropolis
+	resources={
+		steel=40
+		aluminium=28
+		chromium = 4
+		tungsten = 2
+	}
+
+	history={
+		owner = SAR
+		victory_points = {
+			6788 10 
+		}
+		victory_points = {
+			6780 5 
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 7
+			industrial_complex = 1
+			dockyard = 2
+			air_base = 8
+			6788 = {
+				naval_base = 8
+			}
+		}
+		add_core_of = ITA
+		add_core_of = SAR
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 10
+				industrial_complex = 2
+				dockyard = 3
+			}
+		}
+	}
+
+	provinces={
+		611 11570 6635 776 3782 6780 9738 11721 770 11730 9741 771 11723 3772 6788 11891
+	}
+}

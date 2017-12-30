@@ -1,0 +1,21 @@
+state={
+	id=750
+	name="STATE_750"
+
+	history={
+		owner = LIP
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = LIP
+
+	}
+
+	provinces={
+		3355
+	}
+	manpower = 1000
+	buildings_max_level_factor = 1.000
+	state_category = rural
+}

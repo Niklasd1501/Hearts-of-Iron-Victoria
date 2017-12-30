@@ -1,0 +1,22 @@
+state={
+	id=761
+	name="STATE_761"
+
+	history={
+		owner = MOD
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ITA
+		add_core_of = MOD
+
+	}
+
+	provinces={
+		6973 3976 9752
+	}
+	manpower = 1000
+	buildings_max_level_factor = 1.000
+	state_category = rural
+}

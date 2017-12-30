@@ -1,0 +1,39 @@
+
+state={
+	id=778
+	name="STATE_778"
+	manpower = 5824712
+	
+	
+	state_category = metropolis
+	
+	resources={
+		oil=580
+		aluminium=96
+	}
+
+
+	history={
+		owner = MEX
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 9
+			air_base = 3
+			6785 = {
+				naval_base = 1
+			}
+
+		}
+		add_core_of = TEX
+		add_core_of = MEX
+
+		victory_points = {
+			12782 1 
+		}
+
+	}
+
+	provinces={
+		4884 6987 12728 8064 2042 12782 1998 9773 6785 1927 4955 12369 6798 5038 10740 5061 2019 1954 10894 
+	}
+}

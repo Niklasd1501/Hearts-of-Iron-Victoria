@@ -1,0 +1,21 @@
+state={
+	id=749
+	name="STATE_749"
+
+	history={
+		owner = BAU
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = BAU
+
+	}
+
+	provinces={
+		11493 526 9375
+	}
+	manpower = 1000
+	buildings_max_level_factor = 1.000
+	state_category = rural
+}

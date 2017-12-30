@@ -1,0 +1,24 @@
+state={
+	id=758
+	name="STATE_758"
+
+	history={
+		owner = KOL
+		victory_points = {
+			1150 5 
+		}
+		buildings = {
+			infrastructure = 10
+
+		}
+		
+
+	}
+
+	provinces={
+		2196
+	}
+	manpower = 1000
+	buildings_max_level_factor = 1.000
+	state_category = rural
+}

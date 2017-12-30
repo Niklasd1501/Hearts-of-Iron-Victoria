@@ -1,0 +1,30 @@
+state={
+	id=752
+	name="STATE_752"
+
+	history={
+		owner = KOL
+		buildings = {
+			infrastructure = 1
+
+				12237 = {
+				naval_base = 2
+
+			}
+				12240 = {
+				naval_base = 1
+
+			}
+
+		}
+
+
+	}
+
+	provinces={
+		10423 11004 11018 12400 12240 12428 1389 4393 7614 5135 7409 4418 12237 7365 12193 12154 10251 10974 4317 7305 12931
+	}
+	manpower = 1000
+	buildings_max_level_factor = 1.000
+	state_category = rural
+}

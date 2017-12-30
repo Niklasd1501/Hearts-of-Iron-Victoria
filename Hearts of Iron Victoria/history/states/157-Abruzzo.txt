@@ -1,0 +1,31 @@
+
+state={
+	id=157
+	name="STATE_157"
+	manpower = 2979335
+	
+	state_category = city
+
+	history={
+		owner = PAP
+		victory_points = {
+			925 1 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			925 = {
+				naval_base = 4
+			}
+			6831 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = ITA
+		add_core_of = PAP
+	}
+
+	provinces={
+		3910 9838 11790 925 6926 967 11861
+	}
+}

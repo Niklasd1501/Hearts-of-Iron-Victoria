@@ -1,0 +1,22 @@
+state={
+	id=680
+	name="STATE_680"
+	manpower = 324110
+	
+	state_category = wasteland
+
+	history={
+		owner = EGY
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = SYR
+add_core_of = TUR
+
+	}
+
+
+	provinces={
+		 2013 3942 7513 10383 12316 12442 
+	}
+}

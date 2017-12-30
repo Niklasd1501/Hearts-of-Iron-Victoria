@@ -1,0 +1,22 @@
+state={
+	id=744
+	name="STATE_744"
+
+	history={
+		owner = BRE
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = BRE
+
+	}
+
+	provinces={
+		3326 13211
+
+	}
+	manpower = 1000
+	buildings_max_level_factor = 1.000
+	state_category = rural
+}

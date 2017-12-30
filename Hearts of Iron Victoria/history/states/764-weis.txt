@@ -1,0 +1,21 @@
+state={
+	id=764
+	name="STATE_764"
+
+	history={
+		owner = KOL
+		buildings = {
+			infrastructure = 1
+
+		}
+		
+
+	}
+
+	provinces={
+		12834 2100 8015 7972
+	}
+	manpower = 1000
+	buildings_max_level_factor = 1.000
+	state_category = rural
+}

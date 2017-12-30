@@ -1,0 +1,21 @@
+state={
+	id=748
+	name="STATE_748"
+
+	history={
+		owner = HAN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = HAN
+
+	}
+
+	provinces={
+		11468 11402 6513
+	}
+	manpower = 1000
+	buildings_max_level_factor = 1.000
+	state_category = rural
+}

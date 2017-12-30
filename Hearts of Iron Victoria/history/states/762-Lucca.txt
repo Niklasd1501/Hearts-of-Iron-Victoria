@@ -1,0 +1,22 @@
+state={
+	id=762
+	name="STATE_762"
+
+	history={
+		owner = LUC
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ITA
+		add_core_of = LUC
+
+	}
+
+	provinces={
+		6946
+	}
+	manpower = 1000
+	buildings_max_level_factor = 1.000
+	state_category = rural
+}

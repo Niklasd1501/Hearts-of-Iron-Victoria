@@ -1,0 +1,68 @@
+ideas = {
+
+	country = {
+
+
+		friedrich_wilhelm_iii = {
+			
+			allowed = {
+				original_tag = PRE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+				unity_weekly = +0.001
+			}
+			
+
+		
+	}
+
+
+		friedrich_wilhelm_iv = {
+			
+			allowed = {
+				original_tag = PRE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				unity_weekly = +0.001
+			}
+			
+
+		}
+
+
+				wilhelm_i = {
+			
+			allowed = {
+				original_tag = PRE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+				unity_weekly = +0.001
+			}
+			
+
+		
+	}
+
+
+	}
+
+}

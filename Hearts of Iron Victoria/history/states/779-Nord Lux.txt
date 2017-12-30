@@ -1,0 +1,31 @@
+
+state={
+	id=779
+	name="STATE_779"
+	manpower = 5824712
+	
+	
+	state_category = metropolis
+	
+
+
+
+	history={
+		owner = LUX
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 9
+			air_base = 3
+
+		}
+		add_core_of = LUX
+		
+
+
+
+	}
+
+	provinces={
+		13212 
+	}
+}

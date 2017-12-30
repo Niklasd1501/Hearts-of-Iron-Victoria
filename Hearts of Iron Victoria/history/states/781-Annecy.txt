@@ -1,0 +1,24 @@
+state={
+	id=781
+	name="STATE_781"
+
+	state_category = town
+
+	history={
+		owner = SAR
+		add_core_of = SAR
+		add_core_of = ITA
+		victory_points = {
+			778 1 
+		}		
+	}
+	buildings = {
+			infrastructure = 3
+		}
+
+	provinces={
+		9745 6609 778 9603 11573 6784
+	}
+	manpower=307500
+	buildings_max_level_factor=1.000
+}
