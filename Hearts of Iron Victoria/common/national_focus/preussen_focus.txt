@@ -1,0 +1,617 @@
+focus_tree = {
+	id = preussen_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PRE
+		}
+	}
+	default = no
+	focus = {
+		id = PRE_deutschland_politik
+		icon = GFX_goal_generic_military_sphere_shine
+		cost = 10,00
+		x = 5
+		y = 0
+			available_if_capitulated = yes
+			completion_reward = {
+
+}
+
+	}
+	focus = {
+		id = PRE_kolonial_politik
+		icon = GFX_goal_generic_military_sphere_shine
+		cost = 1,00
+		x = 37
+		y = 0
+			available_if_capitulated = yes
+			completion_reward = {
+
+}
+
+	}
+	focus = {
+		id = pre_foerderung_eisenbahn
+		text = pre_foerderung_eisenbahn
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10,00
+		x = 29
+		y = 0
+
+	}
+	focus = {
+		id = pre_industrie_haupt
+		text = pre_industrie_haupt
+		icon = GFX_goal_generic_construction
+		cost = 10,00
+		x = 19
+		y = 0
+
+	}
+	focus = {
+		id = PRE_klein_deutschland
+		icon = GFX_goal_anschluss
+		cost = 10,00
+		prerequisite = {
+			focus = PRE_deutschland_politik
+		}
+		x = 9
+		y = 1
+			available_if_capitulated = yes
+			completion_reward = {
+
+}
+
+	}
+	focus = {
+		id = PRE_deutsch_danischer_krieg
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 10,00
+		prerequisite = {
+			focus = PRE_klein_deutschland
+		}
+		x = 8
+		y = 2
+			will_lead_to_war_with = DEN
+			#ai_will_do = {
+			# factor = 1
+			#}
+			available_if_capitulated = yes
+			completion_reward = {
+					PRE = {
+							declare_war_on = {
+									target = DEN
+									type = take_state_focus
+								}
+						}
+					AUS = {
+							declare_war_on = {
+									target = DEN
+									type = take_state_focus
+								}
+						}
+					SAX = {
+							declare_war_on = {
+									target = DEN
+									type = take_state_focus
+								}
+						}
+					BAU = {
+							declare_war_on = {
+									target = DEN
+									type = take_state_focus
+								}
+						}
+					LUK = {
+							declare_war_on = {
+									target = DEN
+									type = take_state_focus
+								}
+						}
+					LIP = {
+							declare_war_on = {
+									target = DEN
+									type = take_state_focus
+								}
+						}
+					OLD = {
+							declare_war_on = {
+									target = DEN
+									type = take_state_focus
+								}
+						}
+					BRE = {
+							declare_war_on = {
+									target = DEN
+									type = take_state_focus
+								}
+						}
+					HAM = {
+							declare_war_on = {
+									target = DEN
+									type = take_state_focus
+								}
+						}
+					HAN = {
+							declare_war_on = {
+									target = DEN
+									type = take_state_focus
+								}
+						}
+					MKL = {
+							declare_war_on = {
+									target = DEN
+									type = take_state_focus
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = PRE_ultimatum_öster_holstein
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 10,00
+		prerequisite = {
+			focus = PRE_deutsch_danischer_krieg
+		}
+		x = 8
+		y = 3
+			available_if_capitulated = yes
+			completion_reward = {
+					dismantle_faction = Deutscher_Bund
+				}
+
+	}
+	focus = {
+		id = PRE_befreundung_nord
+		icon = GFX_goal_generic_major_alliance
+		cost = 10,00
+		prerequisite = {
+			focus = PRE_klein_deutschland
+		}
+		x = 10
+		y = 2
+			available_if_capitulated = yes
+			completion_reward = {
+
+}
+
+	}
+	focus = {
+		id = PRE_gründung_nord
+		icon = GFX_goal_generic_national_unity
+		cost = 10,00
+		prerequisite = {
+			focus = PRE_befreundung_nord
+		}
+		prerequisite = {
+			focus = PRE_ultimatum_öster_holstein
+		}
+		x = 9
+		y = 4
+			available = {
+					HAN = {
+							is_subject = no
+						}
+				}
+			#ai_will_do = {
+			# factor = 1
+			#}
+			available_if_capitulated = yes
+			completion_reward = {
+					country_event = {
+							id = preussen.6
+							days = 1
+						}
+				}
+
+	}
+	focus = {
+		id = PRE_emser_depesche
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = PRE_gründung_nord
+		}
+		mutually_exclusive = {
+			focus = PRE_offensiv_frankreich
+		}
+		x = 8
+		y = 5
+			will_lead_to_war_with = FRA
+			#ai_will_do = {
+			# factor = 1
+			#}
+			available_if_capitulated = yes
+			completion_reward = {
+					FRA = {
+							declare_war_on = {
+									target = PRE
+									type = take_state_focus
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = PRE_offensiv_frankreich
+		icon = GFX_goal_generic_military_sphere_shine
+		cost = 10,00
+		prerequisite = {
+			focus = PRE_gründung_nord
+		}
+		mutually_exclusive = {
+			focus = PRE_emser_depesche
+		}
+		x = 11
+		y = 5
+			will_lead_to_war_with = FRA
+			#ai_will_do = {
+			# factor = 1
+			#}
+			available_if_capitulated = yes
+			completion_reward = {
+					PRE = {
+							declare_war_on = {
+									target = FRA
+									type = take_state_focus
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = PRE_gründung_deutsch_klein
+		icon = GFX_goal_anschluss
+		cost = 10,00
+		prerequisite = {
+			focus = PRE_emser_depesche
+		}
+		x = 8
+		y = 6
+			available_if_capitulated = yes
+			completion_reward = {
+					country_event = {
+							id = preussen.7
+							days = 1
+						}
+				}
+
+	}
+	focus = {
+		id = PRE_helgoland_frage
+		icon = GFX_goal_generic_military_sphere_shine
+		cost = 10,00
+		prerequisite = {
+			focus = PRE_gründung_deutsch_klein
+		}
+		x = 12
+		y = 7
+			available_if_capitulated = yes
+			completion_reward = {
+
+}
+
+	}
+	focus = {
+		id = pre_industrie_rheinland_ziv
+		text = pre_industrie_rheinland_ziv
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10,00
+		prerequisite = {
+			focus = pre_industrie_haupt
+		}
+		mutually_exclusive = {
+			focus = pre_industrie_rheinland_mil
+		}
+		x = 13
+		y = 1
+
+	}
+	focus = {
+		id = pre_ressourcen_rheinland_ziv
+		text = pre_ressourcen_rheinland_ziv
+		icon = GFX_goal_generic_construction2
+		cost = 10,00
+		prerequisite = {
+			focus = pre_industrie_rheinland_ziv
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = pre_industrie_rheinland_mil
+		text = pre_industrie_rheinland_mil
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10,00
+		prerequisite = {
+			focus = pre_industrie_haupt
+		}
+		mutually_exclusive = {
+			focus = pre_industrie_rheinland_ziv
+		}
+		x = 15
+		y = 1
+
+	}
+	focus = {
+		id = pre_ressourcen_rheinland_mil
+		text = pre_ressourcen_rheinland_mil
+		icon = GFX_goal_generic_construction2
+		cost = 10,00
+		prerequisite = {
+			focus = pre_industrie_rheinland_mil
+		}
+		x = 15
+		y = 2
+
+	}
+	focus = {
+		id = pre_industrie_schlesien_ziv
+		text = pre_industrie_schlesien_ziv
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10,00
+		prerequisite = {
+			focus = pre_industrie_haupt
+		}
+		mutually_exclusive = {
+			focus = pre_industrie_schlesien_mil
+		}
+		avaibel = {
+			and = {
+				PRE = { owns_state = 67 }
+				PRE = { owns_state = 66 }
+			}
+		}
+		completion_reward = {
+			67 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			66 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+		x = 17
+		y = 1
+
+	}
+	focus = {
+		id = pre_ressourcen_schlesien_ziv
+		text = pre_ressourcen_schlesien_ziv
+		icon = GFX_goal_generic_construction2
+		cost = 10,00
+		prerequisite = {
+			focus = pre_industrie_schlesien_ziv
+		}
+		x = 17
+		y = 2
+
+	}
+	focus = {
+		id = pre_industrie_schlesien_mil
+		text = pre_industrie_schlesien_mil
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10,00
+		prerequisite = {
+			focus = pre_industrie_haupt
+		}
+		mutually_exclusive = {
+			focus = pre_industrie_schlesien_ziv
+		}
+		avaibel = {
+			and = {
+				PRE = { owns_state = 67 }
+				PRE = { owns_state = 66 }
+			}
+		}
+		completion_reward = {
+			67 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+			66 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+		}
+		x = 19
+		y = 1
+
+	}
+	focus = {
+		id = pre_ressourcen_schlesien_mil
+		text = pre_ressourcen_schlesien_mil
+		icon = GFX_goal_generic_construction2
+		cost = 10,00
+		prerequisite = {
+			focus = pre_industrie_schlesien_mil
+		}
+		x = 19
+		y = 2
+
+	}
+	focus = {
+		id = PRE_deutsch_ostafrika
+		icon = GFX_goal_generic_military_sphere_shine
+		cost = 1,00
+		prerequisite = {
+			focus = PRE_kolonial_politik
+		}
+		x = 36
+		y = 1
+			available_if_capitulated = yes
+			completion_reward = {
+					country_event = {
+							id = preussen.10
+							days = 1
+						}
+				}
+
+	}
+	focus = {
+		id = PRE_luxemburg_krise
+		icon = GFX_goal_generic_military_sphere_shine
+		cost = 10,00
+		prerequisite = {
+			focus = PRE_gründung_deutsch_klein
+		}
+		x = 8
+		y = 7
+			available_if_capitulated = yes
+			completion_reward = {
+
+}
+
+	}
+	focus = {
+		id = PRE_kriegsdrohung
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 10,00
+		prerequisite = {
+			focus = PRE_luxemburg_krise
+		}
+		mutually_exclusive = {
+			focus = PRE_einigung
+		}
+		x = 7
+		y = 8
+			available_if_capitulated = yes
+			completion_reward = {
+					country_event = {
+							days = 1
+							id = preussen.19
+						}
+				}
+
+	}
+	focus = {
+		id = PRE_einigung
+		icon = GFX_goal_generic_improve_relations
+		cost = 10,00
+		prerequisite = {
+			focus = PRE_luxemburg_krise
+		}
+		mutually_exclusive = {
+			focus = PRE_kriegsdrohung
+		}
+		x = 9
+		y = 8
+			available_if_capitulated = yes
+			completion_reward = {
+					country_event = {
+							days = 1
+							id = france.1
+						}
+				}
+
+	}
+	focus = {
+		id = PRE_sansibar
+		icon = GFX_goal_generic_improve_relations
+		cost = 10,00
+		prerequisite = {
+			focus = PRE_helgoland_frage
+		}
+		mutually_exclusive = {
+			focus = PRE_ultimatum_gb
+		}
+		x = 11
+		y = 8
+			available = {
+					is_puppet = no
+					758 = {
+							is_owned_by = PRE
+						}
+				}
+			#ai_will_do = {
+			# factor = 1
+			#}
+			available_if_capitulated = yes
+			completion_reward = {
+					ENG = {
+							country_event = {
+									id = preussen.11
+									days = 1
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = PRE_ultimatum_gb
+		icon = GFX_focus_AST_never_gallipoli_shine
+		cost = 10,00
+		prerequisite = {
+			focus = PRE_helgoland_frage
+		}
+		mutually_exclusive = {
+			focus = PRE_sansibar
+		}
+		x = 13
+		y = 8
+			available_if_capitulated = yes
+			completion_reward = {
+
+}
+
+	}
+	focus = {
+		id = PRE_deutsch_sud_westafrika
+		icon = GFX_goal_generic_military_sphere_shine
+		cost = 1,00
+		prerequisite = {
+			focus = PRE_kolonial_politik
+		}
+		x = 38
+		y = 1
+			available_if_capitulated = yes
+			completion_reward = {
+					country_event = {
+							id = preussen.14
+							days = 1
+						}
+				}
+
+	}
+	focus = {
+		id = pre_ressourcen_schlesien_mil_Copy
+		text = pre_ressourcen_schlesien_mil
+		icon = GFX_goal_generic_construction2
+		cost = 10,00
+		prerequisite = {
+			focus = pre_industrie_schlesien_mil
+		}
+		x = 19
+		y = 2
+
+	}
+	focus = {
+		id = pre_ressourcen_schlesien_mil
+		text = pre_ressourcen_schlesien_mil
+		icon = GFX_goal_generic_construction2
+		cost = 10,00
+		prerequisite = {
+			focus = pre_industrie_schlesien_mil
+		}
+		x = 19
+		y = 2
+
+	}
+	focus = {
+		id = pre_ressourcen_schlesien_mil_Copy
+		text = pre_ressourcen_schlesien_mil
+		icon = GFX_goal_generic_construction2
+		cost = 10,00
+		prerequisite = {
+			focus = pre_industrie_schlesien_mil
+		}
+		x = 19
+		y = 2
+
+	}
+	focus = {
+		id = pre_ressourcen_schlesien_mil
+		text = pre_ressourcen_schlesien_mil
+		icon = GFX_goal_generic_construction2
+		cost = 10,00
+		prerequisite = {
+			focus = pre_industrie_schlesien_mil
+		}
+		x = 19
+		y = 2
+
+	}
+}
