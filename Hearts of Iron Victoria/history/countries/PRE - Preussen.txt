@@ -49,7 +49,7 @@ set_autonomy = {
 
 add_ideas = {
 	friedrich_wilhelm_iii
-	
+
 }
 
 1939.1.1 = {

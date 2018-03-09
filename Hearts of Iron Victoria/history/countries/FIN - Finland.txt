@@ -11,8 +11,8 @@ add_ideas = {
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	gw_artillery = 1			
-	tech_support = 1		
+	gw_artillery = 1
+	tech_support = 1
 	tech_recon = 1
 	tech_engineers = 1
 	early_submarine = 1
@@ -27,7 +27,7 @@ add_ideas = {
 
 1939.1.1 = {
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -38,12 +38,12 @@ add_ideas = {
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
+
 	oob = "FIN_1939"
 	set_technology = {
 		early_fighter = 1
 		early_bomber = 1
-		CAS1 = 1		
+		CAS1 = 1
 		interwar_artillery = 1
 		interwar_antitank = 1
 		interwar_antiair = 1
@@ -88,14 +88,14 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		democratic = {
 			popularity = 10
 		}
 
 		fascism = {
 			popularity = 10
 		}
-		
+
 		communism = {
 			popularity = 1
 		}
@@ -104,7 +104,7 @@ set_politics = {
 			popularity = 79
 		}
 	}
-	
+
 	ruling_party = neutrality
 	last_election = "1933.7.1"
 	election_frequency = 36
@@ -115,14 +115,14 @@ set_politics = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			democratic = {
 				popularity = 10
 			}
 
 			fascism = {
 				popularity = 10
 			}
-			
+
 			communism = {
 				popularity = 1
 			}
@@ -131,7 +131,7 @@ set_politics = {
 				popularity = 79
 			}
 		}
-		
+
 		ruling_party = neutrality
 		last_election = "1939.7.1"
 		election_frequency = 36
@@ -186,18 +186,4 @@ create_country_leader = {
 
 add_ideas = {
 	sisu
-}
-
-create_corps_commander = {
-	name = "Erik Heinrichs"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { winter_specialist ranger }
-	skill = 4
-}
-
-create_corps_commander = {
-	name = "Vilho Petter Nenonen"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = { winter_specialist commando }
-	skill = 3
 }

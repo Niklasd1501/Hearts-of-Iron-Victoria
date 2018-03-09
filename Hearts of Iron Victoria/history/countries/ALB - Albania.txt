@@ -11,23 +11,23 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		democratic = {
 			popularity = 0
 		}
 
 		fascism = {
 			popularity = 0
 		}
-		
+
 		communism = {
 			popularity = 0
 		}
-		
-		neutrality = { 
+
+		neutrality = {
 			popularity = 100
 		}
 	}
-	
+
 	ruling_party = neutrality
 	last_election = "1933.3.5"
 	election_frequency = 48
@@ -47,10 +47,3 @@ create_country_leader = {
 		#
 	}
 }
-
-create_field_marshal = {
-	name = "Xhemal Aranitasi"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	skill = 2
-}
-
