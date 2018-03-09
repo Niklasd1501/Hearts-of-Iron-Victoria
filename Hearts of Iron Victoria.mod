@@ -1,6 +1,6 @@
 ﻿name="Hearts of Iron Victoria: Rise of Preußen"
 path="mod/Hearts of Iron Victoria/"
-replace_path="history/provinces"
+replace_path="history/states"
 tags={
 	"Alternative History"
 }
