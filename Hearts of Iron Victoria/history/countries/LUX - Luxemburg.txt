@@ -7,7 +7,7 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	gw_artillery = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	early_fighter = 1
 }
@@ -15,7 +15,7 @@ set_technology = {
 1939.1.1 = {
 
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -27,17 +27,17 @@ set_technology = {
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
+
 	oob = "LUX_1939"
 	set_technology = {
 		tech_recon = 1
 		fighter1 = 1
 		interwar_artillery = 1
 		interwar_antiair = 1
-		
+
 		#doctrines
 		air_superiority = 1
-		
+
 		mass_assault = 1
 		pocket_defence = 1
 		defence_in_depth = 1
@@ -53,7 +53,7 @@ set_technology = {
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
-		oil_plant = 1
+		
 		construction1 = 1
 		construction2 = 1
 		concentrated_industry = 1
@@ -64,14 +64,14 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		democratic = {
 			popularity = 1
 		}
 
 		fascism = {
 			popularity = 1
 		}
-		
+
 		communism = {
 			popularity = 2
 			#banned = no #default is no
@@ -80,7 +80,7 @@ set_politics = {
 			popularity = 96
 		}
 	}
-	
+
 	ruling_party = monarchism
 	last_election = "1936.1.10"
 	election_frequency = 48
@@ -91,19 +91,19 @@ set_politics = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			democratic = {
 				popularity = 92
 			}
 
 			fascism = {
 				popularity = 3
 			}
-			
+
 			communism = {
 				popularity = 5
 			}
 		}
-		
+
 		ruling_party = democratic
 		last_election = "1937.6.6"
 		election_frequency = 36

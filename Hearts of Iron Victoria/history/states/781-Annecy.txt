@@ -9,13 +9,13 @@ state={
 		add_core_of = SAR
 		add_core_of = ITA
 		victory_points = {
-			778 1 
-		}		
-	}
+			778 1
+		}
+
 	buildings = {
 			infrastructure = 3
 		}
-
+}
 	provinces={
 		9745 6609 778 9603 11573 6784
 	}

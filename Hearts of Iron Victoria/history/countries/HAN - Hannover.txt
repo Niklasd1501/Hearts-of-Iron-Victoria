@@ -13,7 +13,7 @@ set_convoys = 20
 1939.1.1 = {
 
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -24,7 +24,7 @@ set_convoys = 20
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
+
 
 	set_technology = {
 		gw_artillery = 1
@@ -49,7 +49,7 @@ set_convoys = 20
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
-		oil_plant = 1
+		
 		construction1 = 1
 		construction2 = 1
 		dispersed_industry = 1
@@ -60,14 +60,14 @@ set_convoys = 20
 set_politics = {
 
 	parties = {
-		democratic = { 
+		democratic = {
 			popularity = 1
 		}
 
 		fascism = {
 			popularity = 1
 		}
-		
+
 		communism = {
 			popularity = 2
 			#banned = no #default is no
@@ -76,7 +76,7 @@ set_politics = {
 			popularity = 96
 		}
 	}
-	
+
 	ruling_party = monarchism
 	last_election = "1936.1.10"
 	election_frequency = 48
@@ -99,23 +99,23 @@ create_country_leader = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			democratic = {
 				popularity = 98
 			}
 
 			fascism = {
 				popularity = 0
 			}
-			
+
 			communism = {
 				popularity = 2
 				#banned = no #default is no
 			}
 		}
-		
+
 		ruling_party = democratic
 		last_election = "1936.1.10"
-		election_frequency = 48  
+		election_frequency = 48
 		elections_allowed = yes
 	}
 

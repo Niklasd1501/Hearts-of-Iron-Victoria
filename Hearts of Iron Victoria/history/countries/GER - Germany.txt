@@ -36,7 +36,6 @@ set_technology = {
 	mobile_warfare = 1
 	trade_interdiction = 1
 	formation_flying = 1
-	synth_oil_experiments = 1
 	transport = 1
 }
 
