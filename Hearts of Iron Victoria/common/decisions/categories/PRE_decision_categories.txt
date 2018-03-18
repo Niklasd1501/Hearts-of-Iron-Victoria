@@ -1,0 +1,24 @@
+#################
+#### Preußen ####
+#################
+
+PRE_Deutschland_grundung_category = {
+
+	icon = generic_political_actions
+
+	allowed = {
+		original_tag = PRE
+	}
+}
+
+PRE_Deutscherbund_category = {
+
+	icon = generic_political_actions
+
+	allowed = {
+		or = {
+			original_tag = PRE
+			original_tag = DEN
+			}
+	}
+}

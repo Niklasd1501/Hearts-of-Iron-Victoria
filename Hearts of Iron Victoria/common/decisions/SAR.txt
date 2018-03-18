@@ -1,0 +1,176 @@
+SAR_Nord_Italien_grundung_category = {
+
+  SAR_Nord_Italien_grundung_misson = {
+
+    icon = generic_operation
+
+    allowed = {
+      original_tag = SAR
+    }
+
+    available = {
+      controls_state = 158
+      controls_state = 760
+      controls_state = 761
+      controls_state = 762
+      controls_state = 162
+      controls_state = 161
+      if = {
+        limit = {
+          not = {
+            country_exists = SIT
+          }
+          controls_state = 157
+        }
+      }
+    }
+
+    cost = 50
+    fire_only_once = yes
+
+    is_good = yes
+
+    complete_effect = {
+      add_war_support = 0.05
+      add_stability = 0.05
+      set_cosmetic_tag = NIT
+      hidden_effect = {
+        SAR = { add_state_core = 760 }
+        SAR = { add_state_core = 761 }
+        SAR = { add_state_core = 762 }
+        SAR = { add_state_core = 162 }
+        SAR = { add_state_core = 161 }
+        SAR = { add_state_core = 157 }
+      }
+    }
+  }
+
+  SAR_Lombardei_Frankreich_bitten_misson = {
+
+    icon = generic_operation
+
+    allowed = {
+      original_tag = SAR
+    }
+
+    available = {
+      not = {
+        hidden_trigger = {
+          or = {
+            has_global_flag = frankreich_wird_sardienen_nicht
+            has_global_flag = frankreich_wird_sardienen_helfen
+          }
+        }
+      }
+    }
+    cost = 10
+    fire_only_once = yes
+    is_good = yes
+    days_remove = 20
+
+    modifier = {
+     political_power_gain = -0.05
+    }
+
+    remove_effect = {
+      FRA = { country_event = { days = 5 id = france.35 } }
+    }
+
+  }
+
+  SAR_Lombardei_Krieg_misson = {
+
+    icon = generic_operation
+
+    allowed = {
+      original_tag = SAR
+    }
+
+    available = {
+      AUS = { controls_state = 159 }
+      hidden_trigger = {
+        or = {
+          has_global_flag = frankreich_wird_sardienen_nicht
+          has_global_flag = frankreich_wird_sardienen_helfen
+        }
+      }
+    }
+    cost = 10
+    fire_only_once = yes
+    is_good = yes
+    days_remove = 30
+
+    modifier = {
+      war_support_weekly  = 0.02
+      political_power_gain = -0.20
+    }
+
+    remove_effect = {
+      declare_war_on = { target = AUS type = annex_everything }
+      if = {
+        limit = {
+          has_global_flag = frankreich_wird_sardienen_helfen
+        }
+        FRA = { add_to_war = { targeted_alliance = SAR enemy = AUS } }
+      }
+      if = {
+        limit = {
+          has_global_flag = frankreich_wird_sardienen_nicht
+        }
+
+      }
+      hidden_effect = {
+        load_oob = "Rebellen"
+        #delete_unit_template_and_units = { division_template = "Rebellen" }
+        set_global_flag = Lombardei_Krieg_ITA_AUS
+        }
+      }
+    }
+
+
+
+    SAR_AUS_Kann_Aufgeben_misson = {
+
+      icon = generic_operation
+
+      allowed = {
+        original_tag = AUS
+
+      }
+
+      available = {
+        AUS = { has_war_with = SAR }
+        and = {
+          not = {
+            AUS = { controls_state = 159 }
+          }
+          not = {
+            AUS = { controls_state = 160 }
+            }
+          not = {
+            AUS = { controls_state = 39 }
+          }
+        }
+      }
+      visible = {
+        has_global_flag = Lombardei_Krieg_ITA_AUS
+      }
+
+      cost = 25
+      fire_only_once = yes
+      is_good = no
+
+      complete_effect = {
+        add_stability = -0.03
+        set_war_support = 0.10
+        SAR = { white_peace = AUS }
+        FRA = { white_peace = AUS }
+        SAR = { transfer_state = 159 }
+        SAR = { add_state_core = 159 }
+        hidden_effect = {
+          clr_global_flag = Lombardei_Krieg_ITA_AUS
+        }
+        SAR = { country_event = { days = 5 id = sardinien.1 } }
+      }
+    }
+}

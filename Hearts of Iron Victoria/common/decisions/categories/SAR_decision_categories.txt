@@ -1,0 +1,23 @@
+###################
+#### Sardinien ####
+###################
+
+SAR_Nord_Italien_grundung_category = {
+
+  icon = generic_political_actions
+
+  picture = GFX_decision_Nord_Italien_grundung_cat
+
+  allowed = {
+    or = {
+      original_tag = SAR
+      original_tag = PAM
+      original_tag = MOD
+      original_tag = LUC
+      original_tag = TOS
+      original_tag = PAP
+      original_tag = SIN
+      original_tag = AUS
+    }
+  }
+}

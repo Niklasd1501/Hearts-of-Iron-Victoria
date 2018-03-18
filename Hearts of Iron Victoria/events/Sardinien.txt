@@ -1,0 +1,21 @@
+﻿###########################
+# French Events
+###########################
+
+add_namespace = sardinien
+
+# Japan demands Indochina
+country_event = {
+	id = sardinien.1
+	title = sardinien.1.t
+	desc = sardinien.1.d
+	picture = GFX_report_event_japan_army_mountainside
+
+	is_triggered_only = yes
+
+	option = { # Accept demands
+		name = sardinien.1.a
+		ai_chance = {	factor = 100 }
+		SAR = { delete_unit_template_and_units = { division_template = "Rebellen" } }
+	}
+}

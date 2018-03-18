@@ -1,0 +1,446 @@
+focus_tree = {
+	id = Gesamnt_Italie_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = SAR
+		}
+	}
+
+	default = no
+
+	focus = {
+		id = ITA_Industrie_Haupt
+		icon = GFX_goal_generic_construction
+		x = 10
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+#	TODO		add_tech_bonus = {}
+		}
+
+
+	}
+
+	focus = {
+		id = ITA_Infra_Haupt
+		icon = GFX_goal_generic_construction
+		x = 17
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+
+		prerequisite = { focus = ITA_Industrie_Haupt }
+
+		completion_reward = {
+#	TODO		add_tech_bonus = {}
+		}
+
+
+	}
+
+	focus = {
+		id = ITA_Infra_Reg_NordWest
+		icon = GFX_goal_generic_construction
+		x = 6
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			SAR = {controls_state = 158}
+		}
+
+		prerequisite = { focus = ITA_Infra_Haupt }
+
+		completion_reward = {
+			158 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1 # TODO
+					instant_build = yes
+					}
+			}
+		}
+	}
+#{
+	focus = {
+		id = ITA_Infra_Reg_NordWest_State_781
+		icon = GFX_goal_generic_construction
+		x = 1
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			SAR = {controls_state = 781}
+		}
+
+		prerequisite = { focus = ITA_Infra_Reg_NordWest }
+
+		completion_reward = {
+			781 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1 # TODO
+					instant_build = yes
+					}
+			}
+		}
+	}
+	focus = {
+		id = ITA_Infra_Reg_NordWest_State_158
+		icon = GFX_goal_generic_construction
+		x = 3
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			SAR = {controls_state = 158}
+		}
+
+		prerequisite = { focus = ITA_Infra_Reg_NordWest }
+
+		completion_reward = {
+			158 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1 # TODO
+					instant_build = yes
+					}
+			}
+		}
+	}
+	focus = {
+		id = ITA_Infra_Reg_NordWest_State_782
+		icon = GFX_goal_generic_construction
+		x = 5
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			SAR = {controls_state = 782}
+		}
+
+		prerequisite = { focus = ITA_Infra_Reg_NordWest }
+
+		completion_reward = {
+			782 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1 # TODO
+					instant_build = yes
+					}
+			}
+		}
+	}
+	focus = {
+		id = ITA_Infra_Reg_NordWest_State_159
+		icon = GFX_goal_generic_construction
+		x = 7
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			SAR = {controls_state = 159}
+		}
+
+		prerequisite = { focus = ITA_Infra_Reg_NordWest }
+
+		completion_reward = {
+			159 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1 # TODO
+					instant_build = yes
+					}
+			}
+		}
+	}
+	focus = {
+		id = ITA_Infra_Reg_NordWest_State_760
+		icon = GFX_goal_generic_construction
+		x = 9
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			SAR = {controls_state = 760}
+		}
+
+		prerequisite = { focus = ITA_Infra_Reg_NordWest }
+
+		completion_reward = {
+			760 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1 # TODO
+					instant_build = yes
+					}
+			}
+		}
+	}
+	focus = {
+		id = ITA_Infra_Reg_NordWest_State_761
+		icon = GFX_goal_generic_construction
+		x = 11
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			SAR = {controls_state = 761}
+		}
+
+		prerequisite = { focus = ITA_Infra_Reg_NordWest }
+
+		completion_reward = {
+			761 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1 # TODO
+					instant_build = yes
+					}
+			}
+		}
+	}
+#}
+	focus = {
+		id = ITA_Infra_Reg_NordOst
+		icon = GFX_goal_generic_construction
+		x = 17
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			SAR = {controls_state = 162}
+		}
+
+		prerequisite = { focus = ITA_Infra_Haupt }
+
+		completion_reward = {
+			162 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1 # TODO
+					instant_build = yes
+					}
+			}
+		}
+	}
+#{
+	focus = {
+		id = ITA_Infra_Reg_NordOst_State_160
+		icon = GFX_goal_generic_construction
+		x = 14
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			SAR = {controls_state = 160}
+		}
+
+		prerequisite = { focus = ITA_Infra_Reg_NordOst }
+
+		completion_reward = {
+			160 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1 # TODO
+					instant_build = yes
+					}
+			}
+		}
+	}
+	focus = {
+		id = ITA_Infra_Reg_NordOst_State_161
+		icon = GFX_goal_generic_construction
+		x = 16
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			SAR = {controls_state = 161}
+		}
+
+		prerequisite = { focus = ITA_Infra_Reg_NordOst }
+
+		completion_reward = {
+			161 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1 # TODO
+					instant_build = yes
+					}
+			}
+		}
+	}
+	focus = {
+		id = ITA_Infra_Reg_NordOst_State_162
+		icon = GFX_goal_generic_construction
+		x = 18
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			SAR = {controls_state = 162}
+		}
+
+		prerequisite = { focus = ITA_Infra_Reg_NordOst }
+
+		completion_reward = {
+			162 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1 # TODO
+					instant_build = yes
+					}
+			}
+		}
+	}
+	focus = {
+		id = ITA_Infra_Reg_NordOst_State_762
+		icon = GFX_goal_generic_construction
+		x = 20
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			SAR = {controls_state = 762}
+		}
+
+		prerequisite = { focus = ITA_Infra_Reg_NordOst }
+
+		completion_reward = {
+			762 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1 # TODO
+					instant_build = yes
+					}
+			}
+		}
+	}
+#}
+  focus = {
+		id = ITA_Infra_Reg_Sud
+		icon = GFX_goal_generic_construction
+		x = 23
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			SAR = {controls_state = 2}
+		}
+
+		prerequisite = { focus = ITA_Infra_Haupt }
+
+		completion_reward = {
+			2 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1 # TODO
+					instant_build = yes
+					}
+			}
+		}
+	}
+#{
+	focus = {
+		id = ITA_Infra_Reg_Sud_State_2
+		icon = GFX_goal_generic_construction
+		x = 22
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			SAR = {controls_state = 2}
+		}
+
+		prerequisite = { focus = ITA_Infra_Reg_Sud }
+
+		completion_reward = {
+			2 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1 # TODO
+					instant_build = yes
+					}
+			}
+		}
+	}
+	focus = {
+		id = ITA_Infra_Reg_Sud_State_117
+		icon = GFX_goal_generic_construction
+		x = 24
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			SAR = {controls_state = 117}
+		}
+
+		prerequisite = { focus = ITA_Infra_Reg_Sud }
+
+		completion_reward = {
+			117 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1 # TODO
+					instant_build = yes
+					}
+			}
+		}
+	}
+#}

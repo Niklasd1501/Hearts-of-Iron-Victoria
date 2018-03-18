@@ -17,7 +17,7 @@
  ENG_communism_ADJ:0 "Britisch"
  SOV_fascism:0 "Russisches Kaiserreich"
  SOV_democratic:0 "Russische Föderation"
- SOV_monarchism:0 "Russisches Kaiserreich"  
+ SOV_monarchism:0 "Russisches Kaiserreich"
  SOV_neutrality:0 "Russland"
  SOV_monarchism:0 "Russland Kaiserreich"
  SOV_communism:0 "Sowjetunion"
@@ -1411,7 +1411,7 @@
  MAN_neutrality_ADJ:0 "Mandschukisch"
  MAN_communism_ADJ:0 "Mandschukisch"
 
- 
+
   PRE_fascism:0 "Preußen"
  PRE_democratic:0 "Preußen"
  PRE_neutrality:0 "Preußen"
@@ -1482,7 +1482,7 @@
  OLD_neutrality_ADJ:0 "Deutsche"
  OLD_communism_ADJ:0 "Deutsche"
  OLD_monarchism_ADJ:0 "Deutsche"
- 
+
   BRE_fascism:0 "Bremen"
  BRE_democratic:0 "Bremen"
  BRE_neutrality:0 "Bremen"
@@ -1805,3 +1805,15 @@
  TEX_neutrality:0 "Texas"
  TEX_communism:0 "Texas"
  TEX_monarchism:0 "Texas"
+
+  NIT_fascism:0 "Nord Italien"
+NIT_democratic:0 "Nord Italien"
+NIT_neutrality:0 "Nord Italien"
+NIT_communism:0 "Nord Italien"
+NIT_monarchism:0 "Nord Italien"
+
+  SIT_fascism:0 "Süd Italien"
+SIT_democratic:0 "Süd Italien"
+SIT_neutrality:0 "Süd Italien"
+SIT_communism:0 "Süd Italien"
+SIT_monarchism:0 "Süd Italien"

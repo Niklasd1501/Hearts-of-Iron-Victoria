@@ -1,0 +1,184 @@
+#Category only allowed for GER
+PRE_Deutschland_grundung_category = {
+
+	PRE_Norddeutscherbund_grundung_mission = {
+
+	icon = generic_operation
+
+	allowed = {
+		original_tag = PRE
+	}
+
+	available =  {
+		controls_state = 64
+	}
+
+	cost = 100
+	fire_only_once = yes
+
+	activation = {
+
+
+	}
+
+	is_good = yes
+
+	complete_effect = {
+		add_war_support = 0.1
+		add_stability = 0.3
+		set_cosmetic_tag = NRD
+		hidden_effect = {
+			annex_country = { target = DAR }
+			annex_country = { target = NAS }
+			annex_country = { target = FRN }
+			annex_country = { target = KAS }
+			annex_country = { target = COB }
+			annex_country = { target = MEI }
+			annex_country = { target = WEI }
+			annex_country = { target = SAX }
+			annex_country = { target = HAN }
+			annex_country = { target = LIP }
+			annex_country = { target = BAU }
+			annex_country = { target = OLD }
+			annex_country = { target = BRE }
+			annex_country = { target = HAM }
+			annex_country = { target = MKL }
+			annex_country = { target = LUK }
+			annex_country = { target = HLS }
+			PRE = { add_state_core = 773 }
+			PRE = { add_state_core = 770 }
+			PRE = { add_state_core = 772 }
+			PRE = { add_state_core = 774 }
+			PRE = { add_state_core = 769 }
+			PRE = { add_state_core = 771 }
+			PRE = { add_state_core = 65 }
+			PRE = { add_state_core = 748 }
+			PRE = { add_state_core = 749 }
+			PRE = { add_state_core = 750 }
+			PRE = { add_state_core = 59 }
+			PRE = { add_state_core = 56 }
+			PRE = { add_state_core = 743 }
+			PRE = { add_state_core = 744 }
+			PRE = { add_state_core = 745 }
+			PRE = { add_state_core = 746 }
+			PRE = { add_state_core = 61 }
+		}
+	}
+
+
+
+	timeout_effect = {
+
+		}
+	}
+
+	PRE_Deutschland_grundung_Klein_misson = {
+
+		icon = generic_political_actions
+
+		allowed = {
+			original_tag = PRE
+		}
+
+		available = {
+			controls_state = 64
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		activation = {
+
+		}
+
+		complete_effect = {
+			add_war_support = 0.05
+			add_stability = 0.05
+			set_cosmetic_tag = KAI
+			hidden_effect = {
+				annex_country = { target = BAY }
+				annex_country = { target = BAD }
+				annex_country = { target = WUR }
+				PRE = { add_state_core = 54 }
+				PRE = { add_state_core = 53 }
+				PRE = { add_state_core = 52 }
+				PRE = { add_state_core = 50 }
+				PRE = { add_state_core = 766 }
+				PRE = { add_state_core = 767 }
+				PRE = { add_state_core = 768 }
+			}
+		}
+	}
+}
+
+PRE_Deutscherbund_category = {
+
+	PRE_Deutscherbund_Danemark_Krieg1_mission = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = PRE
+		}
+
+		available = {
+			controls_state = 64
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		activation = {
+
+		}
+
+		is_good = no
+
+		complete_effect = {
+			add_war_support = 0.05
+			declare_war_on = { target = DEN type = annex_everything }
+			AUS = {add_to_war = { targeted_alliance = PRE enemy = DEN }}
+			MKL = {add_to_war = { targeted_alliance = PRE enemy = DEN }}
+			HAN = {add_to_war = { targeted_alliance = PRE enemy = DEN }}
+			HLS = {add_to_war = { targeted_alliance = DEN enemy = PRE }}
+			set_global_flag = deutsch_danischer_krieg
+		}
+
+	}
+
+	DEN_Danische_Kapitulation = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = DEN
+		}
+
+		available = {
+			or = {
+				DEN = { has_defensive_war_with = PRE }
+				DEN = { has_defensive_war_with = AUS }
+				}
+			not = {
+				DEN = { controls_state = 751 }
+				}
+		}
+
+		visible = {
+			has_global_flag = deutsch_danischer_krieg
+		}
+
+		complete_effect = {
+			add_war_support = -0.5
+			PRE = { transfer_state = 747 }
+			PRE = { add_state_core = 747 }
+			PRE = { transfer_state = 751 }
+			PRE = { add_state_core = 751 }
+			AUS = { transfer_state = 58 }
+			AUS = { add_state_core = 58 }
+			clr_global_flag = deutsch_danischer_krieg
+			white_peace = PRE
+		}
+
+	}
+}
